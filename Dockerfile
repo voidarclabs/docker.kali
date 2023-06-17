@@ -1,5 +1,5 @@
 FROM kasmweb/kali-rolling-desktop:1.13.1-rolling
 
-RUN apt update && apt upgrade
+USER root 
 
-run apt autoremove
+RUN apt-get update -y && apt-get upgrade -y
